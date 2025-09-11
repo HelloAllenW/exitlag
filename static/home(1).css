@@ -1,0 +1,150 @@
+.hero::before {
+    display: none;
+}
+
+.hero.hero-aniversario {
+    background: url(/templates/exit-lag/img/promotion/aniversario/simbolo_bg.png), lightgray 50% / cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-position: bottom right;
+    padding: 140px 0 100px;
+}
+
+.hero.hero-aniversario .bg-effect {
+    position: relative;
+}
+
+.hero.hero-aniversario .bg-effect::before {
+    content: "";
+    width: 0px;
+    border-radius: 50%;
+    filter: blur(158px);
+    padding: 160px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    background: red;
+    opacity: .2;
+}
+
+.hero.hero-aniversario .hero--title {
+    font-family: "Organetto-RegularSemiExp", sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 52px;
+    color: white;
+}
+
+.hero.hero-aniversario .hero--subtitle {
+    text-transform: uppercase;
+    font-family: "Organetto", sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 34px;
+    letter-spacing: 1.4px;
+    color: var(--exl-neutral-gray-100);
+}
+
+.hero.hero-aniversario .hero--subtitle b {
+    font-weight: 700;
+}
+
+.hero.hero-aniversario .rog {
+    position: relative;
+    z-index: 1;
+}
+
+.hero.hero-aniversario .rog::before {
+    content: "";
+    border-radius: 50%;
+    filter: blur(168px);
+    padding: 310px;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    background: red;
+    opacity: .2;
+    z-index: -1;
+}
+
+.hero.hero-aniversario .rog .hero--badge {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    z-index: -1;
+}
+
+.hero.hero-aniversario .rog .hero--badge::before {
+    content: "";
+    border-radius: 50%;
+    filter: blur(20px);
+    padding: 99px;
+    position: absolute;
+    top: 20%;
+    left: -40px;
+    background: #000;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.hero.hero-aniversario .rog .hero--badge img {
+    -webkit-animation: rotating 12s linear infinite;
+}
+
+.hero--destaques .destaque {
+    border-left: solid 2px var(--exl-accent);
+    padding-left: 15px;
+}
+
+.hero--destaques .destaque .hero--destaque-title {
+    font-size: 1.5rem;
+}
+
+.hero.hero-aniversario .rog .hero--texto--rog {
+    position: relative;
+    display: table;
+    text-align: left;
+    font-size: 1.1rem;
+    width: auto;
+    padding: 20px;
+    margin-top: -30%;
+    margin-left: 9%;
+    border-radius: 16px;
+    border: 1px solid var(--exl-checkout-accent);
+    background: linear-gradient(91deg, rgba(255, 255, 255, 0.09) 1.43%, rgba(37, 4, 4, 0.09) 99.41%);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+.hero.hero-aniversario .rog .hero--texto--rog p {
+    margin-bottom: 0;
+}
+
+.hero.hero-aniversario .rog .hero--texto--rog p b {
+    font-weight: 700;
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero.hero-aniversario {
+        padding: 140px 0 50px;
+    }
+    .hero.hero-aniversario .rog .hero--texto--rog {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .hero.hero-aniversario .rog .hero--texto--rog p.font-24 {
+        font-size: 1.3rem;
+    }
+}

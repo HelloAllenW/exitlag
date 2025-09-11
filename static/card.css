@@ -1,0 +1,10 @@
+.card-light {
+    --exl-foreground: var(--exl-primary-darker);
+    background-color: var(--exl-card-background-lighter);
+    border-radius: 8px;
+    color: var(--exl-primary-darker);
+}
+
+.three-column-grid.card-light{
+    align-items: center;
+}

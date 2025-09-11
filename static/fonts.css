@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "Organetto";
+    src: url("/templates/exit-lag/fonts/Organetto-BoldSemiExt.woff2") format("woff2"), url("/templates/exit-lag/fonts/Organetto-BoldSemiExt.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Organetto";
+    src: url("/templates/exit-lag/fonts/Organetto-BoldSemiExt.woff2") format("woff2"), url("/templates/exit-lag/fonts/Organetto-BoldSemiExt.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Organetto";
+    src: url("/templates/exit-lag/fonts/Organetto-RegularSemiExt.woff2") format("woff2"), url("/templates/exit-lag/fonts/Organetto-RegularSemiExt.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Organetto";
+    src: url("/templates/exit-lag/fonts/Organetto-LightSemiExt.woff2") format("woff2"), url("/templates/exit-lag/fonts/Organetto-LightSemiExt.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Organetto Default';
+    src: url('/templates/exit-lag/fonts/Organetto-Bold.woff2') format('woff2'),
+    url('/templates/exit-lag/fonts/Organetto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Organetto Default';
+    src: url('/templates/exit-lag/fonts/Organetto-Light.woff2') format('woff2'),
+    url('/templates/exit-lag/fonts/Organetto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Organetto Default';
+    src: url('/templates/exit-lag/fonts/Organetto-Regular.woff2') format('woff2'),
+    url('/templates/exit-lag/fonts/Organetto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Organetto-RegularSemiExp';
+    src: url('/templates/exit-lag/fonts/Organetto-RegularSemiExp.woff2') format('woff2'),
+    url('/templates/exit-lag/fonts/Organetto-RegularSemiExp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('/templates/exit-lag/fonts/Ubuntu-Medium.woff2') format('woff2'),
+        url('/templates/exit-lag/fonts/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+  @font-face {
+      font-family: 'Ubuntu';
+      src: url('/templates/exit-lag/fonts/Ubuntu-Bold.woff2') format('woff2'),
+          url('/templates/exit-lag/fonts/Ubuntu-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'Ubuntu';
+      src: url('/templates/exit-lag/fonts/Ubuntu-Light.woff2') format('woff2'),
+          url('/templates/exit-lag/fonts/Ubuntu-Light.woff') format('woff');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'Ubuntu';
+      src: url('/templates/exit-lag/fonts/Ubuntu-Regular.woff2') format('woff2'),
+          url('/templates/exit-lag/fonts/Ubuntu-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  .organetto {
+    font-family: "Organetto", sans-serif;
+  }
+
+  .organetto-default {
+    font-family: "Organetto Default", sans-serif;
+  }
+
+  .organetto-extended {
+    font-family: "Organetto-RegularSemiExp", sans-serif;
+  }
+
+  .fw-100 {
+    font-weight: 100;
+  }
+  
+  .fw-300 {
+    font-weight: 300;
+  }
+  
+  .fw-400 {
+    font-weight: 400;
+  }
+  
+  .fw-500 {
+    font-weight: 500;
+  }
+  
+  .fw-600 {
+    font-weight: 600;
+  }
+  
+  .fw-700 {
+    font-weight: 700;
+  }
+  
+  .fw-800 {
+    font-weight: 800;
+  }
+  
+  .fw-900 {
+    font-weight: 900;
+  }
+  
+  .font-10 {
+    font-size: 10px;
+  }
+  
+  .font-12 {
+    font-size: 12px;
+  }
+  
+  .font-13 {
+    font-size: 13px;
+  }
+  
+  .font-14 {
+    font-size: 14px;
+  }
+  
+  .font-15 {
+    font-size: 15px;
+  }
+  
+  .font-16 {
+    font-size: 16px;
+  }
+  
+  .font-18 {
+    font-size: 18px;
+  }
+  
+  .font-19 {
+    font-size: 19px;
+  }
+  
+  .font-20 {
+    font-size: 20px;
+  }
+  
+  .font-22 {
+    font-size: 22px;
+  }
+  
+  .font-24 {
+    font-size: 24px;
+  }
+  
+  .font-25 {
+    font-size: 25px;
+  }
+  
+  .font-100 {
+    font-size: 100px;
+  }
+  
+  .font-120 {
+    font-size: 120px;
+  }

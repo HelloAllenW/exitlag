@@ -1,0 +1,220 @@
+/*global components*/
+@import url(./components/index.css);
+
+.exl-theme-light {
+  --exl-foreground: black;
+}
+
+main#main-body {
+  padding: 0;
+}
+
+.btn:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.primary-bg-color {
+  background-color: var(--exl-primary);
+}
+
+.text-primary {
+  color: var(--exl-accent) !important;
+}
+
+.bg-primary {
+  background-color: var(--exl-accent) !important;
+}
+
+.btn-primary {
+  background-color: var(--exl-accent) !important;
+  border-color: var(--exl-accent) !important;
+  outline: none !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--exl-accent-darker) !important;
+  border-color: var(--exl-accent-darker) !important;
+  outline: none !important;
+}
+
+.password-strength-meter .progress {
+  height: 0.5rem;
+  background-color: var(--exl-backdrop);
+}
+
+.badge-danger {
+  background-color: var(--exl-accent) !important;
+}
+
+.grecaptcha-badge {
+  bottom: 180px !important;
+}
+
+/*hiding paypal billing agreement button*/
+#Primary_Navbar-Open_Ticket {
+  display: none;
+}
+
+/*hide forms in cart complete page*/
+#frmPayment form {
+  display: none !important;
+}
+
+div#frmPayment {
+  background-color: var(--exl-card-background);
+  color: #000000;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.invoice_payment {
+  margin-top: 180px;
+}
+
+.invoice_payment .card_content {
+  background-color: var(--exl-card-background);
+}
+
+.invoice_payment .form-group .form-control:not(textarea) {
+  border-color: #000;
+  color: #000 !important;
+}
+
+.invoice_payment .form-group .form-control::placeholder {
+  color: #000;
+}
+
+#modalPaymentMethodDeleteConfirmation.modal .modal-dialog .modal-content,
+#modalBADeleteConfirmation.modal .modal-dialog .modal-content {
+  background-color: var(--exl-primary-lighter);
+  color: #fff;
+}
+
+#modalPaymentMethodDeleteConfirmation.modal .modal-header,
+#modalBADeleteConfirmation.modal .modal-header {
+  background-color: #1a1a1a !important;
+  border-bottom: 0;
+}
+
+.button_exl.active .pulse {
+  animation: pulse 0.7s infinite;
+  animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.button_exl .pulse {
+  animation: none;
+}
+
+/** Password Requirements **/
+
+.password-requirements-user {
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #212630;
+}
+
+.password-requirements__list-user {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.password-requirements__list-user--item {
+  font-size: clamp(0.75rem, 3vw, 0.875rem);
+  color: var(--exl-neutral-gray-400);
+}
+
+.password-requirements__list-user--item.valid {
+  color: #22eba3;
+}
+
+.password-requirements__list-user--item span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+.has-error .invalid-feedback {
+  display: block;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(196, 33, 33, 0.4);
+    -webkit-filter: brightness(100%);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(196, 33, 33, 0.4);
+    -webkit-filter: brightness(200%);
+  }
+}
+
+/* Loading Spinner */
+
+.spinner {
+  width: 20px; /* control the size */
+  aspect-ratio: 1;
+  display: grid;
+  -webkit-mask: conic-gradient(from 22deg, #0003, #000);
+  mask: conic-gradient(from 22deg, #0003, #000);
+  animation: spinner 1s steps(8) infinite;
+  display: none;
+}
+
+.btn.loading .spinner {
+  display: grid;
+}
+
+.spinner,
+.spinner:before {
+  background: linear-gradient(#fff 0 0) 50% / 34% 8% space no-repeat,
+    linear-gradient(#fff 0 0) 50% / 8% 34% no-repeat space;
+}
+.spinner:before {
+  content: "";
+  transform: rotate(45deg);
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.glow {
+  animation: glow 1s;
+}
+
+@keyframes glow {
+  0%   {
+    box-shadow: 0px 0px 0px 0px rgb(195 33 33 / 0%);
+  }
+  50% {
+    box-shadow: 0px 0px 10px 4px rgb(195 33 33 / 52%);
+  }
+  90%  {
+    box-shadow: 0px 0px 0px 0px rgb(195 33 33 / 0%);
+  }
+  100%  {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 767px) {
+    .btn-sm-block {
+        display: block;
+        width: 100%;
+    }
+
+    .btn-sm-block + .btn-sm-block {
+        margin-top: .5rem;
+    }
+}

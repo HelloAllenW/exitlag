@@ -1,0 +1,50 @@
+small.exl-small {
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+small.exl-small.exl-small--asterisk::before {
+  content: "*";
+  color: var(--exl-accent);
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+i.fab,
+i.fa-brands {
+  font-style: normal;
+}
+
+i.fas--big,
+i.fab--big {
+  font-size: 36px;
+}
+
+a {
+  color: var(--exl-accent);
+  cursor: pointer;
+}
+
+.font-weight-bolder {
+  font-weight: 900 !important;
+}
+
+.exl-title {
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: "Organetto";
+}
+.exl-title-link {
+  color: var(--exl-card-background);
+  font-size: 0.6em;
+  transition: all 0.2s;
+}
+
+.exl-title-link:hover {
+  color: white;
+  text-decoration: none;
+}

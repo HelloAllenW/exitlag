@@ -1,0 +1,24 @@
+.exl-red-ribon {
+    position: relative;
+    z-index: 3;
+    padding: 4rem 0;
+    text-align: center;
+    background: #721416;
+    overflow: hidden;
+    color: white;
+    isolation: isolate;
+}
+
+.exl-red-ribon > .container > .exl-button{
+    margin-top: 1rem;
+}
+
+.exl-red-ribon .exl-red-ribon-bg {
+    top: 0;
+    bottom: 0;
+    margin-left: -1000px;
+    left: 50%;
+    position: absolute;
+    color: white;
+    z-index: -1;
+}

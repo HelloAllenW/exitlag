@@ -1,0 +1,15 @@
+.nav-pills {
+    background-color: var(--neutral-gray-300);
+    border-radius: 0.25rem;
+}
+.nav-pills .nav-link {
+    color: var(--exl-tab-color);
+    color: var(--neutral-gray-600);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--exl-bg-darker);
+    color: var(--exl-checkout-accent);
+}

@@ -1,0 +1,69 @@
+.filter-wrapper{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.filter-list-container{
+    flex-grow: 1;
+}
+
+.filter-list{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.filter-item, .filter-clear{
+    background-color: var(--exl-primary-lighter);
+    padding: .2rem 1rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    transition: all .2s;
+    flex-direction: row;
+    display: flex;
+    gap: .5rem;
+}
+
+.filter-item::after{
+    display: inline-block;
+    content: "\f0b0";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Pro";
+}
+
+.filter-clear::after{
+    display: inline-block;
+    content: "\f1f8";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Pro";
+}
+
+.filter-item:hover, .filter-clear:hover{
+    text-decoration: none;
+    background-color: var(--exl-primary);
+    color: white;
+}
+
+.filter-item.active {
+    background-color: var(--exl-accent);
+}
+
+.filter-item.active:hover{
+    background-color: var(--exl-accent-darker);
+}
+
+@media (max-width: 768px) {
+    .filter-list-container{
+        overflow-y: scroll;
+        padding-bottom: 5px;
+        scrollbar-width: thin;
+    }
+    .filter-item, .filter-clear{
+        white-space: nowrap;
+    }
+}
