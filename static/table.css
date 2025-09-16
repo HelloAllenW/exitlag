@@ -1,7 +1,0 @@
-.table.table-striped{
-    border: 1px solid white;
-}
-
-.table.table-striped tr[onclick]{
-    cursor: pointer;
-}
